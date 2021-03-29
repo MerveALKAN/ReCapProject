@@ -41,6 +41,11 @@ namespace DataAccess.Concrete.EntityFramework
             throw new NotImplementedException();
         }
 
+        public void GetCarsByBrandId(Color entity)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(Color entity)
         {
             throw new NotImplementedException();

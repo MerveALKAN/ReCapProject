@@ -21,7 +21,8 @@ namespace DataAccess.Concrete.InMemory
             new Car { Id = 2, BrandId = 2, ColorId = 2, DailyPrice = 100, ModelYear = 2017, Description = "Fiat" },
             new Car { Id = 3, BrandId = 2, ColorId = 2, DailyPrice = 250, ModelYear = 2015, Description = "Bmw" },
             new Car { Id = 4, BrandId = 1, ColorId = 1, DailyPrice = 100, ModelYear = 2017, Description = "Peugeot" },
-            new Car { Id = 5, BrandId = 3, ColorId = 1, DailyPrice = 170, ModelYear = 2016, Description = "Audi" }
+            new Car { Id = 5, BrandId = 3, ColorId = 1, DailyPrice = 170, ModelYear = 2016, Description = "Audi" },
+           
 
             };
     }
@@ -64,9 +65,19 @@ namespace DataAccess.Concrete.InMemory
             return _cars.Where(c => c.Id == Id).ToList();
         }
 
-        public void GetById(Car car)
+        public List<Car> GetCarsByBrandId(int Id)
+        {
+            return _cars.Where(c => c.Id == Id).ToList();
+        }
+
+        public void GetCarsByBrandId(Car entity)
         {
             throw new NotImplementedException();
+        }
+
+        public List<Car> GetCarsByColorId(int Id)
+        {
+            return _cars.Where(c => c.Id == Id).ToList();
         }
 
         public void Update(Car car)

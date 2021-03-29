@@ -63,6 +63,11 @@ namespace DataAccess.Concrete.EntityFramework
             throw new NotImplementedException();
         }
 
+        public void GetCarsByBrandId(Car entity)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(Car entity)
         {
             using (ReCapProjectContext context = new ReCapProjectContext())

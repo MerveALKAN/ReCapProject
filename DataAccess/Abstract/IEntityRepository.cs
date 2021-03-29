@@ -17,7 +17,7 @@ namespace DataAccess.Abstract
         void Update(T entity);
         void Delete(T entity);
 
-        void GetById(T entity);
+        void GetCarsByBrandId(T entity);
         List<T> GetByCategory(int Id);
     }
 }
