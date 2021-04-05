@@ -23,5 +23,9 @@ namespace Business.Constants
         public static string RentalListed = "Listelendi";
         public static string UserListed = "Kullanıcılar listelendi";
         public static string BrandAdded = "Eklendi";
+
+        public static string CarCountOfCategoryError = "Bir kategoride en fazla 10 ürün olabilir.";
+        internal static string CarNameAlreadyExists = "Bu isimde zaten başka bir ürün var";
+        internal static string BrandLimitExceded="Marka limiti aşıldığı için yeni ürün eklenemiyor";
     }
 }

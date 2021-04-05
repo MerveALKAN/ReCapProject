@@ -44,7 +44,8 @@ namespace ConsoleUI
 
         private static void CarTest()
         {
-            CarManager carManager = new CarManager(new EfCarDal());
+            CarManager carManager = new CarManager(new EfCarDal(), 
+                new BrandManager(new EfBrandDal()));
 
             var result = carManager.GetCarDetails();
             if (result.Success==true)
